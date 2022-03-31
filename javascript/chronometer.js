@@ -16,7 +16,7 @@ class Chronometer {
   }
   
   getMinutes() {
-    return Math.floor(this.currentTime / 60);
+    return Math.floor(this.currentTime/60);
   }
   
   getSeconds() {
@@ -28,7 +28,7 @@ class Chronometer {
   }
 
   computeTwoDigitNumber(value) {
-    if (`${value}`.length<2){
+    if (value < 10){
       return `0${value}`
     }
     return `${value}`;

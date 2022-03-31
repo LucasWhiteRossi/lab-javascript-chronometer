@@ -20,22 +20,21 @@ function printTime() {
 }
 
 function printMinutes() {
-  minUniElement.innerText = chronometer.computeTwoDigitNumber(chronometer.getMinutes())[1];
-  minDecElement.innerText = chronometer.computeTwoDigitNumber(chronometer.getMinutes())[0];
+  const minutes = chronometer.computeTwoDigitNumber(chronometer.getMinutes())
+  minUniElement.innerText = minutes[1];
+  minDecElement.innerText = minutes[0];
 }
 
 function printSeconds() {
-  secUniElement.innerText = chronometer.computeTwoDigitNumber(chronometer.getSeconds())[1];
-  secDecElement.innerText = chronometer.computeTwoDigitNumber(chronometer.getSeconds())[0];
+  const seconds = chronometer.computeTwoDigitNumber(chronometer.getSeconds())
+  secUniElement.innerText = seconds[1];
+  secDecElement.innerText = seconds[0];
 }
 
 function printMilliseconds() {
-  milUniElement.innerText = chronometer.computeTwoDigitNumber(
-    chronometer.getMilliseconds()
-  )[1];
-  milDecElement.innerText = chronometer.computeTwoDigitNumber(
-    chronometer.getMilliseconds()
-  )[0];
+  const miliseconds = chronometer.computeTwoDigitNumber(chronometer.getMilliseconds())
+  milUniElement.innerText = miliseconds[1];
+  milDecElement.innerText = miliseconds[0];
 }
 
 function printSplit(split) {
